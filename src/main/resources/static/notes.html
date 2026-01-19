@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Notes</title>
+    <link rel="stylesheet" href="notes.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Write your Financial Notes</h1>
+
+        <label>ID:</label>
+        <input id="id1" type="number" placeholder="Enter ID"><br><br>
+        <label>Date:</label>
+        <input id="date1" type="date"><br><br>
+        <label>Note:</label>
+        <textarea id="note" placeholder="Write something important..."></textarea>
+
+
+
+
+
+        <div class="buttons">
+            <button class= "add" onclick="addNotes()">Add Notes</button><br><br>
+            <button class="delete" onclick="deleteNotes()">Delete Notes</button><br><br>
+            <button class="update" onclick="updateNotes()">Update Notes</button>
+        </div>
+    </div>
+
+    <script src="notes.js"></script>
+
+</body>
+
+</html>

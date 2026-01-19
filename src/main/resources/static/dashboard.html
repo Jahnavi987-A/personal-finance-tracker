@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="title">Personal Finance Dashboard</h1>
+
+    
+        <div class="summary-container">
+            <div class="card">
+                <h3>Total Income</h3>
+                <p id="income">₹0</p>
+            </div>
+
+            <div class="card">
+                <h3>Total Expense</h3>
+                <p id="expense">₹0</p>
+            </div>
+
+            <div class="card">
+                <h3>Savings</h3>
+                <p id="savings">₹0</p>
+            </div>
+        </div>
+
+    
+        <div class="chart-container">
+            <div class="chart-box">
+                <h3>Expense by Category</h3>
+                <div class="pie-container">
+                    <canvas id="pieChart"></canvas>
+                </div>
+            </div>
+
+            <div class="chart-box">
+                <h3>Monthly Expenses</h3>
+                <div class="bar-container">
+                    <canvas id="barChart"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="dashboard.js"></script>
+</body>
+
+</html>
