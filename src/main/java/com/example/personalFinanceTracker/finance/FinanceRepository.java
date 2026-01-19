@@ -1,7 +1,8 @@
-package com.example.personalFinanceTracker;
+package com.example.personalFinanceTracker.finance;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
+
 import java.util.*;
 
 public interface FinanceRepository extends JpaRepository<Finance,Integer>{
