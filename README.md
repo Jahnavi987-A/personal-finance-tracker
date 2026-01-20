@@ -79,6 +79,7 @@ A full-stack **Personal Finance Tracker** web application built using **Spring B
 - Implemented using **Spring Security**
 - Login required to access finance & dashboard pages
 - All APIs protected after authentication
+- Designed for single-user access to secure personal financial data.
   
 
 
