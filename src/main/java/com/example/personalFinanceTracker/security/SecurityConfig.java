@@ -35,7 +35,7 @@ public class SecurityConfig {
         http
                 .csrf(csrf -> csrf.disable())
 
-                // 🔥 THIS LINE IS THE KEY
+            
                 .securityMatcher("/**")
 
                 .authorizeHttpRequests(auth -> auth
@@ -61,7 +61,6 @@ public class SecurityConfig {
                         .deleteCookies("JSESSIONID")
                         .permitAll())
 
-                // 🔥 DISABLE DEFAULT LOGIN COMPLETELY
                 .httpBasic(basic -> basic.disable());
 
         return http.build();
