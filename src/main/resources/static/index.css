@@ -131,3 +131,17 @@ h2 {
     margin-top: 35px;
     margin-bottom: 10px;
 }
+.logout-btn {
+    background: #dc3545;
+    color: white;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+}
+
+.logout-btn:hover {
+    background: #bb2d3b;
+}
