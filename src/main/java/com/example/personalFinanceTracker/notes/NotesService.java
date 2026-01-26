@@ -1,5 +1,7 @@
 package com.example.personalFinanceTracker.notes;
 
+import java.util.List;
+
 // import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -29,5 +31,8 @@ public class NotesService {
     }
     public Notes getNotesById(int id){
         return notesRepository.findById(id).orElseThrow(()->new RuntimeException("Notes not found"));
+    }
+    public List<Notes> getNotes(){
+        return notesRepository.findAll();
     }
 }
