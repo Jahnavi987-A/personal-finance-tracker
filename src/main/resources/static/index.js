@@ -32,10 +32,10 @@ function getTransactions(){
     }).then(res=>res.json()).then(data=>{
         let text = "";
         data.forEach(txt => {
-            text += txt.type+" ";
-            text += txt.amount+" ";
-            text += txt.category+" ";
-            text += txt.date;
+            text += txt.type+", ";
+            text += txt.amount+", ";
+            text += txt.category+", ";
+            text += txt.date+"\n";
         });
         document.getElementById("output").value = text;
     });
@@ -46,10 +46,10 @@ function findById(){
         method: "GET"
     }).then(res=>res.json()).then(data=>{
         let text = "";
-            text += data.type+" ";
-            text += data.amount+" ";
-            text += data.category+" ";
-            text += data.date;
+            text += data.type+", ";
+            text += data.amount+", ";
+            text += data.category+", ";
+            text += data.date+"\n";
         document.getElementById("output").value = text;
         
     });
