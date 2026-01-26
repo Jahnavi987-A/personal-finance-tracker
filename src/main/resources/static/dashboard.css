@@ -2,12 +2,12 @@ body {
     font-family: Arial, sans-serif;
     background: white;
     margin: 0;
-    padding: 20px;
+    padding: 10px;
 }
 .container {
     max-width: 1300px;
     margin: auto;
-    padding: 15px;
+    padding: 12px;
     border: 2px solid #e0e0e0;
     border-radius: 18px;
     background-color: #2f5d57;
@@ -18,7 +18,7 @@ body {
     margin-bottom: 30px;
 }
 
-/* SUMMARY CARDS */
+
 .summary-container {
     display: flex;
     justify-content: space-around;
@@ -27,7 +27,7 @@ body {
 
 .card {
     background: white;
-    padding: 20px;
+    padding: 7px;
     width: 200px;
     text-align: center;
     border-radius: 10px;
@@ -37,10 +37,10 @@ body {
 .card p {
     font-size: 22px;
     font-weight: bold;
-    margin: 10px 0 0;
+    margin: 7px;
 }
 
-/* CHARTS */
+
 .chart-container {
     display: flex;
     gap: 30px;
@@ -56,8 +56,8 @@ body {
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 .pie-container {
-    width: 280px;          
-    height: 280px;
+    width: 240px;          
+    height: 240px;
     margin: 0 auto;        
     background-color: #f7f9fc;  
     border-radius: 12px;
@@ -65,5 +65,35 @@ body {
 }
 .bar-container {
     width: 100%;
-    height: 280px;  
+    height: 240px;  
+}
+.filter-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px auto 30px;
+    padding: 12px 20px;
+    background: white;
+    width: fit-content;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+}
+
+.filter-bar label {
+    font-weight: 600;
+    color: #2f5d57;
+}
+
+#monthSelect {
+    padding: 8px 14px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    cursor: pointer;
+    outline: none;
+}
+
+#monthSelect:hover {
+    border-color: #2f5d57;
 }

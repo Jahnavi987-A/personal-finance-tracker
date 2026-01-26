@@ -1,26 +1,24 @@
 
 const BASE_URL = "http://localhost:8080/api/dashboard";
-const SELECTED_MONTH = 1; 
+// const SELECTED_MONTH = 1; 
 
 
 let pieChartInstance = null;
 let barChartInstance = null;
 
 
-window.onload = function () {
-    loadDashboardData();
-};
+document.addEventListener("DOMContentLoaded",()=>{
+    loadDashboardData(1);
+})
 
+document.getElementById("monthSelect").addEventListener("change",function(){
+    const selectedMonth = this.value;
+    loadDashboardData(selectedMonth);
+})
 
-function loadDashboardData() {
-    fetch(`${BASE_URL}?month=${SELECTED_MONTH}`)
-        .then(response => {
-            if (!response.ok) {
-                throw new Error("Failed to fetch dashboard data");
-            }
-            return response.json();
-        })
-        .then(data => {
+function loadDashboardData(month) {
+    fetch(`${BASE_URL}?month=${month}`)
+        .then(res=>res.json()).then(data=>{
             updateSummaryCards(data);
             renderPieChart(data.categoryExpenses);
             renderBarChart(data.monthlyExpenses);
